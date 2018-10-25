@@ -2,11 +2,11 @@ FROM centos:7
 
 #ARG GLASSFISH_VERSION=4.1.2
 ARG GLASSFISH_VERSION=4.1
-ARG DATAVERSE_VERSION=4.9.1
+ARG DATAVERSE_VERSION=4.9.4
 
 # Download requirements
-#ADD https://download.oracle.com/glassfish/${GLASSFISH_VERSION}/release/glassfish-${GLASSFISH_VERSION}.zip /tmp
-ADD http://dlc-cdn.sun.com/glassfish/${GLASSFISH_VERSION}/release/glassfish-${GLASSFISH_VERSION}.zip /tmp
+ADD https://download.oracle.com/glassfish/${GLASSFISH_VERSION}/release/glassfish-${GLASSFISH_VERSION}.zip /tmp
+#ADD http://dlc-cdn.sun.com/glassfish/${GLASSFISH_VERSION}/release/glassfish-${GLASSFISH_VERSION}.zip /tmp
 ADD "http://search.maven.org/remotecontent?filepath=org/jboss/weld/weld-osgi-bundle/2.2.10.Final/weld-osgi-bundle-2.2.10.Final-glassfish4.jar" /tmp/weld-osgi-bundle-2.2.10.Final-glassfish4.jar
 ADD http://stedolan.github.io/jq/download/linux64/jq /usr/bin/
 ADD https://github.com/IQSS/dataverse/releases/download/v${DATAVERSE_VERSION}/dvinstall.zip /opt/dv/

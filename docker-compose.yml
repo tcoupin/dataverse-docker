@@ -32,7 +32,6 @@ services:
       - solr
     volumes:
       - dataverse:/usr/local/glassfish4/glassfish/domains/domain1/files
-      - ./dataverse:/dataverse-github
 
 volumes:
   db:
