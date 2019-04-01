@@ -31,7 +31,7 @@ services:
       - postgres
       - solr
     volumes:
-      - dataverse:/usr/local/glassfish4/glassfish/domains/domain1/files
+      - dataverse:/opt/glassfish4/glassfish/domains/domain1/files
 
 volumes:
   db:
