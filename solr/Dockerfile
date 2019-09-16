@@ -1,6 +1,6 @@
 FROM solr:7.3.1-alpine
 
-ARG DATAVERSE_VERSION=4.14
+ARG DATAVERSE_VERSION=4.16
 
 
 RUN cp -r server/solr/configsets/_default server/solr/collection1
