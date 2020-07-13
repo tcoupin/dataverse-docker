@@ -2,7 +2,7 @@ FROM centos:7
 
 #ARG GLASSFISH_VERSION=4.1.2
 ARG GLASSFISH_VERSION=4.1
-ARG DATAVERSE_VERSION=4.16
+ARG DATAVERSE_VERSION=4.20
 
 # Download requirements
 ADD https://download.oracle.com/glassfish/${GLASSFISH_VERSION}/release/glassfish-${GLASSFISH_VERSION}.zip /tmp
