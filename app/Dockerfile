@@ -23,7 +23,7 @@ RUN chmod +x /usr/bin/jq && \
 ENV PATH=$PATH:/opt/glassfish4/bin \
 	JAVA_HOME=/usr/lib/jvm/java-openjdk
 
-EXPOSE 4848 8080 8181
+EXPOSE 8080
 
 # Setup Dataverse
 WORKDIR /opt/dv/
